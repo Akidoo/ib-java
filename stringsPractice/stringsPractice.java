@@ -15,7 +15,7 @@ public class stringsPractice {
 			}
 			
 			//Reverse String minus last element
-		for(int i = ss.length()-2; i>-1; i--){
+		for(int i = ss.length()-2; i>=0; i--){
 			System.out.println(xx[i]);
 		}
 	}
