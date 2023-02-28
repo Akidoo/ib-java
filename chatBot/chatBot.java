@@ -14,6 +14,14 @@ public class chatBot {
 				System.out.println("you should sleep earlier ya ding dong");
 				
 				}
+			String distance = IBIO.input("Do you live far from your school? ");
+			if(distance.equals("yes")){
+				System.out.println("wooooooo take the bus");
+				
+				} else {
+					System.out.println("don't take the bus");
+					
+					}
 	}
 }
 
