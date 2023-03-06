@@ -5,15 +5,17 @@ public class betterBinaryConverter {
 	public static void main (String[] args) {
 		
 		int mult = 0;
-		int sum = 0;
-		int num = IBIO.inputInt("Input a binary number: ");
-		
-		for(int i = 0; i<=8; i++){
-			sum += (num%2)*mult;
+		String binary = "";
+		//int sum = 0;
+		int num = IBIO.inputInt("Input a denary number: ");
+		System.out.print(num + " base 10 = ");
+		//for(int i = 0; i<=8; i++)
+		while(num>0)
+		{
+			binary = (num%2) + binary;
 			num = num/10;
-			
-			}
-			System.out.println(sum);
+		}
+		System.out.println(binary + " in base 2");
 		
 	}
 }
