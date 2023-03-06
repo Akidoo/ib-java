@@ -1,5 +1,4 @@
-
-
+// Spot on, this is the way to do it!
 
 public class stringsPractice {
 	
@@ -10,14 +9,14 @@ public class stringsPractice {
 		
 		//Print characters in the String
 		for(int i = 0; i<ss.length(); i++){
-			System.out.println(xx[i]);
-			
-			}
+			System.out.print(xx[i]);	
+		}
 			
 			//Reverse String minus last element
 		for(int i = ss.length()-2; i>=0; i--){
-			System.out.println(xx[i]);
+			System.out.print(xx[i]);
 		}
+		System.out.println();
 	}
 }
 
