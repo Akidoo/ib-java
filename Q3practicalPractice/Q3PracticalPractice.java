@@ -1,26 +1,40 @@
 
 import java.util.*;
 
-public class Q3Practical
+public class Q3PracticalPractice
 {	
 	public static int max(int[] a)
 	{
-		// REPLACE THE LINE BELOW WITH YOUR CODE
-		return 0;
+		int count3 = 0;
+		int large = a[count3];
+		for(count3 = 0; count3<a.length; count3++) {
+			if(large<a[count3]){
+				large = a[count3];
+				}
+			
+			}
+		return large;
 	}
 	
 	public static int min(int[] a)
 	{
-		// REPLACE THE LINE BELOW WITH YOUR CODE
-		return 0;
+		int count = 0;
+		int small = a[count];
+		for(count = 0; count<a.length; count++) {
+			if(small>a[count]){
+				small = a[count];
+				}
+			
+			}
+		return small;
 	}
 	
 	public static double average(int[] a)
 	{
 		double sum = 0;
 		double avg = 0;
-		for(int count = 0; count<a.length; count++) {
-			sum = sum + a[count];
+		for(int count2 = 0; count2<a.length; count2++) {
+			sum = sum + a[count2];
 			
 			}
 		avg = sum/a.length;
@@ -29,20 +43,49 @@ public class Q3Practical
 	
 	public static int above(int[] a)
 	{
-		// REPLACE THE LINE BELOW WITH YOUR CODE
-		return 0;
+		int aboveAverage = 0;
+		for(int count4 = 0; count4<a.length; count4++){
+			if(a[count4]>average(a)){
+				aboveAverage = aboveAverage+1;
+				
+				}
+			
+			}
+		return aboveAverage;
 	}
 	
 	public static int below(int[] a)
 	{
-		// REPLACE THE LINE BELOW WITH YOUR CODE
-		return 0;
+		int belowAverage = 0;
+		for(int count5 = 0; count5<a.length; count5++){
+			if(a[count5]<average(a)){
+				belowAverage = belowAverage+1;
+				
+				}
+			
+			}
+		return belowAverage;
 	}
 	
 	public static boolean isUnique(int[] a)
 	{
-		// REPLACE THE LINE BELOW WITH YOUR CODE
-		return false;
+		int count6 = 0;
+		int searchedValue = a[count6];
+		boolean unique = false;
+		for(count6 = 0; count6<a.length-1; count6++){
+			if(searchedValue == a[count6+1]){
+				unique = false;
+			}
+				else{
+					unique = true;
+					searchedValue = a[count6+1];
+					System.out.println(unique);
+					
+				
+				}
+			
+			}
+		return unique;
 	}
 	
 	public static void printArray(int[] a)
