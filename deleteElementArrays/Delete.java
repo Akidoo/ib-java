@@ -3,7 +3,7 @@
 
 public class Delete {
 	
-	public static void printArray(int[] a)
+	public static void printArray(String[] a)
 	{
 		System.out.println("Akaash Banerjee. " + "Array Length: " + a.length);
 		for(int i = 0; i<a.length; i++){
@@ -14,9 +14,9 @@ public class Delete {
 	}
 	
 	public static void main (String[] args) {
-		int array[] = {2, 3, 4, 5, 6, 9, 10, 17, 19, 20};
+		String array[] = {"Jaziel", "Annika", "Kimber", "Amelie", "Nikola", "Taliah", "Abdiel", "Fredy", "Zakai", "Karly"};
 		printArray(array);
-		int deletion = 10;
+		String deletion = "Annika";
 		int currentSize = array.length+1;
 		for(int i = 0; i<currentSize; i++){
 			if(array[i] == deletion) {
