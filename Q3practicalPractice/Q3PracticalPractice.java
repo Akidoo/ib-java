@@ -79,7 +79,7 @@ public class Q3PracticalPractice
 				else{
 					unique = true;
 					searchedValue = a[count6+1];
-					System.out.println(unique);
+					//System.out.println(unique); debugging
 					
 				
 				}
@@ -100,7 +100,7 @@ public class Q3PracticalPractice
 	
 	public static void largest(int[] a, int howMany)
 	{
-		// YOUR CODE GOES HERE
+		
 	}
 	
 	public static void smallest(int[] a, int howMany)
@@ -130,6 +130,18 @@ public class Q3PracticalPractice
 		System.out.print( "How many largest and smallest numbers to find (2~20)? " );
 		int howMany = 0;
 		// INPUT HOWMANY BELOW, AND VALIDATE THE INPUT PROPERLY
+		boolean inRange = false;
+		while(!inRange){
+		howMany = inputInt(" ");
+		if(howMany>0 && howMany<11){
+			inRange = true;
+			
+			}
+			
+			else{
+			System.out.println("Error- Please input a number between 1 and 10");
+			}
+	}
 		
 		
 		
