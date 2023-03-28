@@ -11,23 +11,29 @@ public class Replace {
 			
 			}
 	}
-	
-	public static void main (String[] args) {
-		String array[] = {"Jaziel", "Annika", "Kimber", "Amelie", "Nikola", "Taliah", "Abdiel", "Fredy", "Zakai", "Karly"};
-		printArray(array);
+	public static void replaceElement(String[] a)
+	{
 		String Replacement = "Annika";
-		for(int i = 0; i<array.length; i++){
-			if(array[i] == Replacement) {
+		for(int i = 0; i<a.length; i++){
+			if(a[i] == Replacement) {
 				
-				array[i] = "Anthony";
+				a[i] = "Anthony";
 				
 				
 				
 				}
 			}
-			for(int f = 0; f<array.length; f++){
-			System.out.println(array[f]);
+			for(int f = 0; f<a.length; f++){
+			System.out.println(a[f]);
+		
+		}
+	}
+	
+	public static void main (String[] args) {
+		String array[] = {"Jaziel", "Annika", "Kimber", "Amelie", "Nikola", "Taliah", "Abdiel", "Fredy", "Zakai", "Karly"};
+		printArray(array);
+		replaceElement(array);
 	}
 }
-}
+
 
