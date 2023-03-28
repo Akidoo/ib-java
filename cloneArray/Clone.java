@@ -6,8 +6,11 @@ public class Clone {
 	{
 		System.out.println("Akaash Banerjee. " + "Array Length: " + a.length);
 		for(int i = 0; i<a.length; i++){
-			System.out.println(a[i]);
-			
+			System.out.print(a[i]);
+			if(i<a.length-1){
+				System.out.print(", ");
+				
+				}
 			
 			}
 	}
@@ -16,7 +19,11 @@ public class Clone {
 	{
     String[] newArray = Arrays.copyOf(a, a.length);
     for (int i = 0; i < newArray.length; i++) {
-        System.out.println(newArray[i]);
+        System.out.print(newArray[i]);
+        if(i<a.length-1){
+				System.out.print(", ");
+				
+				}
     }
 }
 
@@ -25,6 +32,7 @@ public class Clone {
 	public static void main (String[] args) {
 		String array[] = {"Jaziel", "Annika", "Kimber", "Amelie", "Nikola", "Taliah", "Abdiel", "Fredy", "Zakai", "Karly"};
 		printArray(array);
+		System.out.println(" ");
 		cloneElement(array);
 		
 	}
