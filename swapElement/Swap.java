@@ -8,8 +8,9 @@ public class Swap {
 		System.out.println("Akaash Banerjee. " + "Array Length: " + a.length);
 		for(int i = 0; i<a.length; i++){
 			System.out.println(a[i]);
-			
 		}
+		System.out.println("");
+			
 			}
 	public static void replaceElement(String[] a)
 	{
