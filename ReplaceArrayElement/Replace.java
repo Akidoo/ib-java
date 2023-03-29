@@ -18,6 +18,7 @@ public class Replace {
 			if(a[i] == Replacement) {
 				
 				a[i] = "Anthony";
+				break;
 				}
 			}
 			for(int f = 0; f<a.length; f++){
@@ -27,7 +28,7 @@ public class Replace {
 	}
 	
 	public static void main (String[] args) {
-		String array[] = {"Jaziel", "Annika", "Kimber", "Amelie", "Nikola", "Taliah", "Abdiel", "Fredy", "Zakai", "Karly"};
+		String array[] = {"Jaziel", "Annika", "Kimber", "Amelie", "Nikola", "Taliah", "Annika", "Fredy", "Zakai", "Karly"};
 		printArray(array);
 		replaceElement(array);
 	}
