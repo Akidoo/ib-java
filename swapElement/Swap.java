@@ -7,7 +7,11 @@ public class Swap {
 	{
 		System.out.println("Akaash Banerjee. " + "Array Length: " + a.length);
 		for(int i = 0; i<a.length; i++){
-			System.out.println(a[i]);
+			System.out.print(a[i]);
+			if(i<a.length-1){
+				System.out.print(", ");
+				
+				}
 		}
 		System.out.println("");
 			
@@ -20,7 +24,11 @@ public class Swap {
 			a[i] = a[a.length-3];
 			a[a.length-3] = temp;
 		}
-		System.out.println(a[i]);
+		System.out.print(a[i]);
+		if(i<a.length-1){
+				System.out.print(", ");
+				
+				}
 		}
 	}
 	
