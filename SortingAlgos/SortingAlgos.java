@@ -40,8 +40,9 @@ public class SortingAlgos
 			a[currentIndex] = smallestValue;
 			currentIndex++;
 			System.out.print("\t");
-			printArray(a);
 		}
+			printArray(a);
+		
 	}
 
 	public static void bubbleSort(int[] a)
