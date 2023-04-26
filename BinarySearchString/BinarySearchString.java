@@ -4,6 +4,7 @@ public class BinarySearchString {
   public static void main(String[] args) {
     String[] strings = {"Kai", "Tobias", "Oliver", "Akaash", "Kamya"};
     String string_to_find = "Akaash";
+    selectionSortString(strings);
 
     int index = binarySearch(strings, string_to_find);
 
@@ -32,4 +33,28 @@ public class BinarySearchString {
 
     return -1;
   }
+  
+  public static void selectionSortString(String[] a)
+{
+    int currentIndex = 0;
+    while( currentIndex < a.length - 1 )
+    {
+        int smallestIndex = currentIndex;
+        String smallestValue = a[smallestIndex];
+        int checkIndex	  = smallestIndex + 1;
+        while( checkIndex < a.length )
+        {
+            if(a[checkIndex].compareTo(smallestValue) < 0)
+            {
+                smallestIndex = checkIndex;
+                smallestValue = a[checkIndex];
+            }
+            checkIndex++;
+        }
+        a[smallestIndex] = a[currentIndex];
+        a[currentIndex] = smallestValue;
+        currentIndex++;
+	}
+    
+}
 }
