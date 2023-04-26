@@ -49,9 +49,12 @@ public class Q4Test
     public static boolean areParallel(String[] sa, int[] ia)
     {
 		for (int i = 0; i < ia.length; i++) {
-            
+             if (sa.length != ia.length) {
+            return false;
         }
-        return false; // change...
+
+        }
+        return true;
     }
 
     public static void search(String[] sa, int[] ia, int goals)
