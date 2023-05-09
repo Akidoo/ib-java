@@ -22,5 +22,6 @@ public class Stacks {
 		System.out.println(stack.search("Pokemon")); //locates iten within stack
 		
 	}
+	
 }
 
