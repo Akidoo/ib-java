@@ -70,8 +70,12 @@ public class S2ExamPrep
 	{
 		double sum = 0;
 		double average;
+		int temp;
 		for(int i = 0; i<array.length; i++){
+			temp = array[i];
+			if(isPrime(temp)){
 		sum = sum + array[i];
+	}
 	}
 	average = sum/array.length;
 	return average;
