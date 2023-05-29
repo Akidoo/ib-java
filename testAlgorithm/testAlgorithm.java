@@ -31,10 +31,21 @@ public class testAlgorithm {
 			}
 			return count;
 		}
+	public static double avWords(String sentence) {
+		double sentencec = nWords(sentence);
+		double wordc = nLetters(sentence);
+		double average = wordc/sentencec;
+		
+		return average;
+		
+		}	
+	
 
     public static void main(String[] args)
     {
         System.out.println("nLetters(\"green, \") = " + nLetters("green, "));
         System.out.println("nLetters(\"green \") = " + nLetters("green "));
+        System.out.println("According to all known laws of aviation, there is no way a bee should be able to fly.");
+        System.out.println(avWords("According to all known laws of aviation, there is no way a bee should be able to fly."));
     }
 }
