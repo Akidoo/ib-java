@@ -2,16 +2,19 @@ public class testAlgorithm {
 
     static char[] punctuation = { ',', '.', '\"', '\'', ':', ';', '(', ')', '?', '!' };
     public static int nLetters(String words) {
+		boolean isLetter = false;
         int count = 0;
         char[] wordc = words.toCharArray();
         while (wordc[count] != ' ')
         {
             count = count + 1;
+             isLetter = true;
         }
         for(int i = 0; i<wordc.length; i++){
 			for(int j = 0; j<punctuation.length; j++){
 				if(wordc[i] == punctuation[j]){
 					count = count-1;
+					isLetter = false;
 					}
 				}
 			}
@@ -31,6 +34,8 @@ public class testAlgorithm {
 			}
 			return count;
 		}
+		
+		
 	public static double avWords(String sentence) {
 		double sentencec = nWords(sentence);
 		double wordc = nLetters(sentence);
