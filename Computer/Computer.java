@@ -9,4 +9,9 @@ public abstract class Computer {
         this.Type = Type;
 
     }
+
+    public void setPrimaryMemory(double primaryMemory)
+    {
+        this.primaryMemory = primaryMemory*1.5;
+    }
 }
