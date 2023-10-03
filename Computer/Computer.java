@@ -4,14 +4,20 @@ public abstract class Computer {
     private double primaryMemory;
 
 
+     public double getPrimaryMemory()
+    {
+        return primaryMemory;
+    }
+
+    public void setPrimaryMemory(double newPrimaryMemory)
+    {
+        primaryMemory = newPrimaryMemory;
+    }
+    
     public Computer(String Type, double primaryMemory) 
     {
         this.Type = Type;
 
     }
-
-    public void setPrimaryMemory(double primaryMemory)
-    {
-        this.primaryMemory = primaryMemory*1.5;
-    }
+    
 }
