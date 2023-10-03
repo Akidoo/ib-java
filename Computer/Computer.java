@@ -11,10 +11,10 @@ public abstract class Computer {
 
     public void setPrimaryMemory(double newPrimaryMemory)
     {
-        primaryMemory = newPrimaryMemory;
+        primaryMemory = newPrimaryMemory*1.5;
     }
     
-    public Computer(String Type, double primaryMemory) 
+    public Computer(String Type) 
     {
         this.Type = Type;
 
