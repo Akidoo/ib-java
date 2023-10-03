@@ -3,7 +3,7 @@ public abstract class Computer {
     private String Type;
     private double primaryMemory;
 
-
+    
      public double getPrimaryMemory()
     {
         return primaryMemory;
