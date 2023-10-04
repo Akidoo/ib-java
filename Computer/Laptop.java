@@ -14,6 +14,15 @@ public class Laptop extends Computer {
         this.battery = battery;
      }
 
+     public double getRam() {
+      return ram;
+  }
+
+  public void setRam(double ram) {
+      this.ram = ram;
+  }
+
+
      public void printInfo() {
       System.out.println(ram);
       System.out.println(name);
@@ -27,4 +36,9 @@ public class Laptop extends Computer {
          System.out.println(battery);
       }
      }
+     public String ToString() 
+     {
+      return super.toString() + "\nRAM in GB: " + this.ram;
+
+     } 
 }
