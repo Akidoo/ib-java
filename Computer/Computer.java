@@ -44,7 +44,7 @@ public abstract class Computer {
     public String toString() {
         String output = "Computer type: " + this.Type;
         output = output + "\nProcessor: " + this.processor;
-        output = output + "\nRAM in GB: " + this.ram;
+        //output = output + "\nRAM in GB: " + this.ram;
         //output = output + "\nSSD in GB: " + this.secondaryMemory;
         return output;
     }

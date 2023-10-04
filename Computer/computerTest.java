@@ -7,7 +7,7 @@ public class computerTest {
 
        // newLaptop.printInfo();
         newLaptop.batteryDrain();
-        System.out.println(newLaptop.ToString());
+        System.out.println(newPC.ToString());
 
         //newPC.printInfo();
         //System.out.println(newPC.getGPU());

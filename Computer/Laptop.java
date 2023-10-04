@@ -37,8 +37,8 @@ public class Laptop extends Computer {
       }
      }
      public String ToString() 
-     {
-      return super.toString() + "\nRAM in GB: " + this.ram;
+    {
+     return super.toString() + "\nRAM in GB: " + this.ram;
 
      } 
 }
