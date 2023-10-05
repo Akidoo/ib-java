@@ -1,3 +1,5 @@
+import java.lang.StringBuilder;
+
 public class Circle extends Shape {
     private double radius;
     private double PI = Math.PI;
@@ -42,7 +44,14 @@ public class Circle extends Shape {
     }
 
     public String toString() {
-        return super.toString() + "Radius: " + getRadius() + ", Area: " + getArea() + "Circumference: " + getPerimeter();
+        StringBuilder result = new StringBuilder(super.toString());
+        result.append("Radius: ");
+        result.append(getRadius());
+        result.append(", Area: ");
+        result.append(getArea());
+        result.append("Circumference: ");
+        result.append(getPerimeter());
+        return result.toString();
     }
     
 }
